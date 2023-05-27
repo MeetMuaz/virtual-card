@@ -19,11 +19,15 @@ export default function Home() {
                   intro="Card Number"
                   info="Enter the 16-digit card number on the card"
                 />
-                <InputField 
-                  type="text"
-                  placeholder="xxxx - xxxx - xxxx xxxx"
-                  name="password"
-                />
+                <div className={Styles.Relative}>
+                  <InputField 
+                    type="text"
+                    placeholder="xxxx - xxxx - xxxx xxxx"
+                    name="password"
+                  />
+                  <span className={Styles.McLogo}></span>
+                  <img className={Styles.Badge} src="badge.svg" alt="" />
+                </div>
               </div>
               <div className={`${Styles.FormFlex} ${Styles.FormGroup}`}>
                 <LabelField

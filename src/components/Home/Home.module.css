@@ -57,6 +57,38 @@
     margin-bottom: 2rem;
 }
 
+.Relative{
+    position: relative;
+}
+
+.McLogo{
+    position: absolute;
+    top: 25px;
+    left: 10px;
+}
+
+.McLogo::before, .McLogo::after{
+    content: '';
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ff0000;
+}
+
+.McLogo::after{
+    background-color: #ffff00;
+    margin-left: -7px;
+    opacity: .75;
+}
+
+.Badge{
+    position: absolute;
+    top: 25px;
+    right: 10px;
+}
+
 @media (max-width: 991px) {
     .FormBlock > div:nth-child(2){
         margin-top: 0;
@@ -91,5 +123,12 @@
     }
     .Container{
         padding: 0;
+    }
+    .McLogo{
+        top: 17px;
+    }
+    .Badge{
+        position: absolute;
+        top: 17px;
     }
 }

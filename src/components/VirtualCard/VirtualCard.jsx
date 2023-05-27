@@ -5,7 +5,7 @@ export default function VirtualCard() {
   return (
     <div className={Styles.Wrapper}>
         <div className={Styles.Card}>
-            {/* <div className={Styles.BlueBox} /> */}
+            <div className={Styles.BlueBox} />
             <span className={Styles.Chip}>
                 <img src="chip.svg" alt="" />
             </span>
