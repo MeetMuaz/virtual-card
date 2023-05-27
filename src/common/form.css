@@ -1,0 +1,60 @@
+@import url('styles.css');
+
+
+/* standard laptop and desktops */
+button, input {
+    padding: 20px 40px;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    border-radius: 5px;
+    font-weight: var(--font-meduim);
+}
+input{
+    border: 1px solid var(--input-border-normal);
+    color: var(--secondary-text);
+    outline-color: var(--input-outline-normal);
+    font-weight: var(--font-meduim);
+
+}
+input:focus{
+    background-color: var(--input-background-focus);
+    outline-color: var(--outline-normal-focus);
+    color: var(--primary-color);
+}
+button{
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    color: var(--white-text);
+    margin-top: 0.5rem 0 0;
+}
+input::placeholder{
+    font-size: 16px;
+    font-weight: var(--font-meduim);
+}
+
+
+/* tablets and small laptops */
+@media (min-width: 768px) and (max-width: 991px) {
+    button, input {
+        padding: 15px 30px;
+        font-size: 16px;
+        margin-top: 0.7rem;
+    }
+    input::placeholder{
+        font-size: 16px;
+    }
+}
+
+
+/* mobile devices */
+@media (max-width: 767px) {
+    button, input {
+        padding: 10px 20px;
+        font-size: 14px;
+        margin-top: 0.5rem;
+    }
+    input::placeholder{
+        font-size: 14px;
+    }
+}

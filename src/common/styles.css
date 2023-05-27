@@ -1,0 +1,36 @@
+:root{
+    /* background colors */
+    --primary-color: #2563eb;
+    --secondary-color: #e6e6e6;
+    --white-color: #ffffff;
+    --black-color: #0e0e0e;
+    --muted-color: #989899;
+
+    /* text colors */
+    --primary-text: #2563eb;
+    --secondary-text: #202734;
+    --white-text: #ffffff;
+    --black-text: #0e0e0e;
+    --muted-text: #929293;
+
+    /* font weights */
+    --font-thin: 300;
+    --font-small: 400;
+    --font-normal: 500;
+    --font-meduim: 600;
+    --font-heavy: 700;
+
+    /* shadow types */
+    --shadow-1: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+
+    /* input fields */
+
+        /* normal state */
+        --input-background-normal: #ffffff;
+        --input-border-normal: #e6e6e6;
+        --input-outline-normal: transparent;
+
+        /* focus state */
+        --input-background-focus: #eeeeee;
+        --outline-normal-focus: #2563eb;
+}

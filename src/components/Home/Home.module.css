@@ -1,0 +1,95 @@
+@import url('../../common/styles.css');
+@import url('../../common/form.css');
+
+.Container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.Wrapper{
+    background-color: var(--white-color);
+    padding: 3rem 2rem;
+}
+
+.Form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.FormFlex{
+    display: flex;
+    align-items: center;
+}
+
+.FormFlex > div{
+    padding-right: 10px;
+}
+
+.FormFlex > div{
+    flex: 1 0 50%;
+}
+
+.GridBox{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.FlexInput{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.FlexInput strong{
+    margin: 0 5px;
+}
+
+.FormBlock > div:nth-child(2){
+    margin-top: 1.3rem;
+}
+
+.FormGroup{
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 991px) {
+    .FormBlock > div:nth-child(2){
+        margin-top: 0;
+    }
+    .GridBox{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 5rem;
+    }
+    .Right{
+        margin: 0 auto;
+    }
+    .FormFlex{
+        display: block;
+    }
+
+    .FormFlex > div{
+        padding-right: 0;
+    }
+    .FormGroup{
+        margin-bottom: 1.5rem;
+    }
+    
+}
+
+@media (max-width: 767px) {
+    .FormBlock > div:nth-child(2){
+        margin-top: 0;
+    }
+    .FormGroup{
+        margin-bottom: 1rem;
+    }
+    .Container{
+        padding: 0;
+    }
+}

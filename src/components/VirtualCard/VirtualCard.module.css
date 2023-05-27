@@ -1,0 +1,152 @@
+@import url('../../common/styles.css');
+
+.Card{
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    min-width: 200px;
+    position: relative;
+    width: 230px;
+    margin: 2rem auto 0;
+    top: -60px;
+    height: 320px;
+    z-index: 1;
+}
+
+.Wrapper{
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    padding: 0 2rem 2rem;
+    width: max-content;
+}
+
+.BlueBox {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    position: absolute;
+    height: 20px;
+    width: 80px;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.Chip{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    transform: rotate(50px);
+    transform: rotate(90deg);
+}
+
+.Wifi{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.McLogo{
+    position: absolute;
+    bottom: 35px;
+    right: 29px;
+}
+
+.McLogo::before, .McLogo::after{
+    content: '';
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ff0000;
+}
+
+.McLogo::after{
+    background-color: #ffff00;
+    margin-left: -7px;
+    opacity: .75;
+}
+
+.Exp{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-weight: var(--font-meduim);
+}
+
+.Master{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 10px;
+}
+
+.CardDetail{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+}
+
+.CardDetail p:nth-child(1){
+    font-size: 1.2rem;
+    font-weight: var(--font-normal);
+    letter-spacing: 1px;
+    line-height: 3rem;
+}
+
+.CardDetail p:nth-child(2){
+    font-size: 1.2rem;
+    font-weight: var(--font-meduim);
+}
+
+.Product li{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+}
+
+.Product li span:nth-child(1){
+    color: var(--muted-text);
+}
+
+.Product li span:nth-child(2){
+    font-weight: var(--font-meduim);
+}
+
+.Line{
+    margin: 1.5rem 0;
+    border: none;
+    border-spacing: 5px;
+    border-top: 1px dotted var(--black-color);
+    color: var(--secondary-color);
+    height: 1px;
+}
+
+.Recipt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Recipt div p{
+    color: var(--muted-text);
+    line-height: 2rem;
+}
+
+.Recipt div h3{
+    font-size: 2rem;
+}
+
+.Percentage{
+    font-size: 1.3rem;
+}
+
+.Currency{
+    color: var(--muted-text);
+    font-size: 1.3rem;
+    font-weight: var(--font-normal);
+}
