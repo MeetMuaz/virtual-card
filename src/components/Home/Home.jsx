@@ -27,7 +27,10 @@ export default function Home() {
                   />
                   <span className={Styles.McLogo}></span>
                   <img className={Styles.Badge} src="badge.svg" alt="" />
-                  <img className={Styles.Edit} src="edit.svg" alt="" />
+                  <small className={Styles.Edit}>
+                    <img src="edit.svg" alt="" />
+                     &nbsp; Edit
+                  </small>
                 </div>
               </div>
               <div className={`${Styles.FormFlex} ${Styles.FormGroup}`}>

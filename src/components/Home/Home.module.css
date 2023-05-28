@@ -62,6 +62,7 @@
 }
 
 .Edit{
+    color: var(--primary-text);
     position: absolute;
     top: -45px;
     right: 10px;
@@ -136,5 +137,8 @@
     .Badge{
         position: absolute;
         top: 17px;
+    }
+    .Edit{
+        top: -60px;
     }
 }
