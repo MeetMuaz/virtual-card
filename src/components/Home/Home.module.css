@@ -61,6 +61,12 @@
     position: relative;
 }
 
+.Edit{
+    position: absolute;
+    top: -45px;
+    right: 10px;
+}
+
 .McLogo{
     position: absolute;
     top: 25px;

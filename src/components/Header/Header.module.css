@@ -47,14 +47,8 @@
     font-size: 5rem;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 991px) {
     .Header{
         width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    .Timer{
-        display: none;
     }
 }

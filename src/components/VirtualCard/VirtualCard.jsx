@@ -5,12 +5,12 @@ export default function VirtualCard() {
   return (
     <div className={Styles.Wrapper}>
         <div className={Styles.Card}>
-            <div className={Styles.BlueBox} />
+            {/* <div className={Styles.BlueBox} /> */}
             <span className={Styles.Chip}>
-                <img src="chip.svg" alt="" />
+                <img src="sim.svg" alt="" />
             </span>
             <span className={Styles.Wifi}>
-                <img src="wifi.svg" alt="" />
+                <img src="connect.svg" alt="" />
             </span>
             <span className={Styles.McLogo} />
             <span className={Styles.Exp}>07 / 23</span>
@@ -23,7 +23,7 @@ export default function VirtualCard() {
         <ul className={Styles.Product}>
             <li>
                 <span>Company</span>
-                <span>Apple</span>
+                <span><img src="apple.svg" alt="" /> Apple</span>
             </li>
             <li>
                 <span>Order Number</span>
@@ -38,7 +38,11 @@ export default function VirtualCard() {
                 <span>$100.00</span>
             </li>
         </ul>
-        <hr className={Styles.Line}/>
+        <div className={Styles.Circle1}></div>
+        <div className={Styles.Circle2}></div>
+
+        <div className={Styles.Line} />
+
         <div className={Styles.Recipt}>
             <div>
                 <p>You have to Pay</p>

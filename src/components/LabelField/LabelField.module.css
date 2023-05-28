@@ -2,6 +2,7 @@
     color: var( --secondary-text);
     margin-bottom: 1rem;
     font-weight: var(--font-meduim);
+    font-size: 1.2rem;
 }
 
 .Label span{
@@ -12,6 +13,7 @@
 @media (min-width: 768px) and (max-width: 991px) {
     .Label p{
         margin-bottom: 0.7rem;
+        font-size: 1.1rem;
     }
 }
 
@@ -20,5 +22,6 @@
 @media (max-width: 767px) {
     .Label p{
         margin-bottom: 0.5rem;
+        font-size: 1rem;
     }
 }

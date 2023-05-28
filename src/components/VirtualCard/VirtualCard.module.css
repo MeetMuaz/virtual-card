@@ -2,7 +2,7 @@
 
 .Card{
     background: rgba(255, 255, 255, 0.95);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    box-shadow: var(--shadow-1);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     border-radius: 10px;
@@ -21,6 +21,7 @@
     border-radius: 10px;
     padding: 0 2rem 2rem;
     width: max-content;
+    position: relative;
 }
 
 .BlueBox {
@@ -118,12 +119,10 @@
 }
 
 .Line{
-    margin: 1.5rem 0;
-    border: none;
-    border-spacing: 5px;
-    border-top: 1px dotted var(--black-color);
-    color: var(--secondary-color);
-    height: 1px;
+    margin: 2rem 0;
+    border: 0;
+    border-top: 3px solid black;
+    border-style: dashed;
 }
 
 .Recipt{
@@ -149,4 +148,21 @@
     color: var(--muted-text);
     font-size: 1.3rem;
     font-weight: var(--font-normal);
+}
+
+.Circle1, .Circle2{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    position: absolute;
+    top: 439px;
+}
+
+.Circle1{
+    left: -10px;
+}
+
+.Circle2{
+    right: -10px;
 }
