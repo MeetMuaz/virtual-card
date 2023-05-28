@@ -21,7 +21,7 @@ export default function Home() {
                 />
                 <div className={Styles.Relative}>
                   <InputField 
-                    type="text"
+                    type="number"
                     placeholder="xxxx - xxxx - xxxx xxxx"
                     name="password"
                   />
@@ -39,26 +39,26 @@ export default function Home() {
                   info="Enter the 3 0r 4 digit number on the card"
                 />
                 <InputField 
-                  type="text"
+                  type="number"
                   placeholder="000 / 0000"
                   name="ccv-number"
                 />
               </div>
               <div className={`${Styles.FormFlex} ${Styles.FormGroup}`}>
                 <LabelField 
-                  type="text"
+                  type="number"
                   intro="Expiry Date"
                   info="Enter the expiration date of the card"
                 />
                 <div className={Styles.FlexInput}>
                   <InputField 
-                    type="text"
+                    type="number"
                     placeholder="MM"
                     name="month"
                   />
                   <strong>:</strong>
                   <InputField 
-                    type="text"
+                    type="number"
                     placeholder="YY"
                     name="year"
                   />
