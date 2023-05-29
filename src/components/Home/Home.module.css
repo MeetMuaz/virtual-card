@@ -1,144 +1,143 @@
-@import url('../../common/styles.css');
-@import url('../../common/form.css');
+@import url("../../common/styles.css");
+@import url("../../common/form.css");
 
-.Container{
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 1rem;
+.Container {
+  max-width: 1100px;
+  height: 100%;
 }
 
-.Wrapper{
-    background-color: var(--white-color);
-    padding: 3rem 2rem;
+.Wrapper {
+  background-color: var(--white-color);
+  padding: 3rem 2rem;
 }
 
-.Form{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
+.Form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
-.FormFlex{
-    display: flex;
-    align-items: center;
+.FormFlex {
+  display: flex;
+  align-items: center;
 }
 
-.FormFlex > div{
-    padding-right: 10px;
+.FormFlex > div {
+  padding-right: 10px;
 }
 
-.FormFlex > div{
-    flex: 1 0 50%;
+.FormFlex > div {
+  flex: 1 0 50%;
 }
 
-.GridBox{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    justify-content: space-between;
-    gap: 2rem;
+.GridBox {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: space-between;
+  gap: 2rem;
 }
 
-.FlexInput{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.FlexInput {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.FlexInput strong{
-    margin: 0 5px;
+.FlexInput strong {
+  margin: 0 5px;
 }
 
-.FormBlock > div:nth-child(2){
-    margin-top: 1.3rem;
+.FormBlock > div:nth-child(2) {
+  margin-top: 1.3rem;
 }
 
-.FormGroup{
-    margin-bottom: 2rem;
+.FormGroup {
+  margin-bottom: 2rem;
 }
 
-.Relative{
-    position: relative;
+.Relative {
+  position: relative;
 }
 
-.Edit{
-    color: var(--primary-text);
-    position: absolute;
-    top: -45px;
-    right: 10px;
+.Edit {
+  color: var(--primary-text);
+  position: absolute;
+  top: -45px;
+  right: 10px;
 }
 
-.McLogo{
-    position: absolute;
-    top: 25px;
-    left: 10px;
+.McLogo {
+  position: absolute;
+  top: 25px;
+  left: 10px;
 }
 
-.McLogo::before, .McLogo::after{
-    content: '';
-    position: relative;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #ff0000;
+.McLogo::before,
+.McLogo::after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ff0000;
 }
 
-.McLogo::after{
-    background-color: #ffff00;
-    margin-left: -7px;
-    opacity: .75;
+.McLogo::after {
+  background-color: #ffff00;
+  margin-left: -7px;
+  opacity: 0.75;
 }
 
-.Badge{
-    position: absolute;
-    top: 25px;
-    right: 10px;
+.Badge {
+  position: absolute;
+  top: 25px;
+  right: 10px;
 }
 
 @media (max-width: 991px) {
-    .FormBlock > div:nth-child(2){
-        margin-top: 0;
-    }
-    .GridBox{
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 5rem;
-    }
-    .Right{
-        margin: 0 auto;
-    }
-    .FormFlex{
-        display: block;
-    }
+  .FormBlock > div:nth-child(2) {
+    margin-top: 0;
+  }
+  .GridBox {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 5rem;
+  }
+  .Right {
+    margin: 0 auto;
+  }
+  .FormFlex {
+    display: block;
+  }
 
-    .FormFlex > div{
-        padding-right: 0;
-    }
-    .FormGroup{
-        margin-bottom: 1.5rem;
-    }
-    
+  .FormFlex > div {
+    padding-right: 0;
+  }
+  .FormGroup {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width:  991px) {
 }
 
 @media (max-width: 767px) {
-    .FormBlock > div:nth-child(2){
-        margin-top: 0;
-    }
-    .FormGroup{
-        margin-bottom: 1rem;
-    }
-    .Container{
-        padding: 0;
-    }
-    .McLogo{
-        top: 17px;
-    }
-    .Badge{
-        position: absolute;
-        top: 17px;
-    }
-    .Edit{
-        top: -75px;
-    }
+  .FormBlock > div:nth-child(2) {
+    margin-top: 0;
+  }
+  .FormGroup {
+    margin-bottom: 1rem;
+  }
+  .McLogo {
+    top: 17px;
+  }
+  .Badge {
+    position: absolute;
+    top: 17px;
+  }
+  .Edit {
+    top: -75px;
+  }
 }

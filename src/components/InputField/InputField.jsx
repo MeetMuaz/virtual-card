@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
-export default function InputField({type, placeholder, name}) {
+export default function InputField({ type, placeholder, name }) {
   return (
     <div>
-        <input type={type} placeholder={placeholder} name={name}/>
+      <input type={type} placeholder={placeholder} name={name} />
     </div>
-  )
+  );
 }

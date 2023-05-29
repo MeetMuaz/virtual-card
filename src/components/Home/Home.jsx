@@ -1,9 +1,9 @@
-import React from 'react'
-import Styles from './Home.module.css'
-import Header from '../Header/Header'
-import InputField from '../InputField/InputField'
-import VirtualCard from '../VirtualCard/VirtualCard'
-import LabelField from '../LabelField/LabelField'
+import React from "react";
+import Styles from "./Home.module.css";
+import Header from "../Header/Header";
+import InputField from "../InputField/InputField";
+import VirtualCard from "../VirtualCard/VirtualCard";
+import LabelField from "../LabelField/LabelField";
 
 export default function Home() {
   return (
@@ -14,13 +14,13 @@ export default function Home() {
           <div className={Styles.Left}>
             <form action="" method="post" className={Styles.Form}>
               <div className={`${Styles.FormGroup} ${Styles.FormBlock}`}>
-                <LabelField 
+                <LabelField
                   margin="1rem"
                   intro="Card Number"
                   info="Enter the 16-digit card number on the card"
                 />
                 <div className={Styles.Relative}>
-                  <InputField 
+                  <InputField
                     type="number"
                     placeholder="xxxx - xxxx - xxxx xxxx"
                     name="password"
@@ -29,7 +29,7 @@ export default function Home() {
                   <img className={Styles.Badge} src="badge.svg" alt="" />
                   <small className={Styles.Edit}>
                     <img src="edit.svg" alt="" />
-                     &nbsp; Edit
+                    &nbsp; Edit
                   </small>
                 </div>
               </div>
@@ -38,30 +38,22 @@ export default function Home() {
                   intro="CCV Number"
                   info="Enter the 3 0r 4 digit number on the card"
                 />
-                <InputField 
+                <InputField
                   type="number"
                   placeholder="000 / 0000"
                   name="ccv-number"
                 />
               </div>
               <div className={`${Styles.FormFlex} ${Styles.FormGroup}`}>
-                <LabelField 
+                <LabelField
                   type="number"
                   intro="Expiry Date"
                   info="Enter the expiration date of the card"
                 />
                 <div className={Styles.FlexInput}>
-                  <InputField 
-                    type="number"
-                    placeholder="MM"
-                    name="month"
-                  />
+                  <InputField type="number" placeholder="MM" name="month" />
                   <strong>:</strong>
-                  <InputField 
-                    type="number"
-                    placeholder="YY"
-                    name="year"
-                  />
+                  <InputField type="number" placeholder="YY" name="year" />
                 </div>
               </div>
               <div className={`${Styles.FormFlex} ${Styles.FormGroup}`}>
@@ -70,10 +62,7 @@ export default function Home() {
                   intro="Password"
                   info="Enter your Dynamic password"
                 />
-                <InputField 
-                  placeholder="password"
-                  name="password"
-                />
+                <InputField placeholder="password" name="password" />
               </div>
               <button>Pay Now</button>
             </form>
@@ -84,32 +73,5 @@ export default function Home() {
         </div>
       </div>
     </div>
-  )
+  );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

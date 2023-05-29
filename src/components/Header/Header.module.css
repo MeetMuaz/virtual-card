@@ -1,54 +1,54 @@
-@import url('../../common/styles.css');
+@import url("../../common/styles.css");
 
-.Header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 5rem;
-    width: calc(63%);
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+  width: calc(63%);
 }
 
-.Digit{
-    background-color: var(--secondary-text);
-    border-radius: 5px;
-    margin: 0 1px;
-    padding: 8px 5px;
-    color: var(--white-text);
+.Digit {
+  background-color: var(--secondary-text);
+  border-radius: 5px;
+  margin: 0 1px;
+  padding: 8px 5px;
+  color: var(--white-text);
 }
 
 .Logo a {
-    font-size: 1.3rem;
-    font-weight: var(--font-heavy);
+  font-size: 1.3rem;
+  font-weight: var(--font-heavy);
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.Logo a span:nth-child(1){
-    color: var(--secondary-text);
+.Logo a span:nth-child(1) {
+  color: var(--secondary-text);
 }
 
 .Circle {
-    height: 35px;
-    width: 35px;
-    background-color: var(--primary-color);
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    box-shadow: var(--shadow-1);
+  height: 35px;
+  width: 35px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  box-shadow: var(--shadow-1);
 }
 
-.Pay{
-    font-weight: var(--font-thin);
+.Pay {
+  font-weight: var(--font-thin);
 }
 
-.Percentage{
-    font-size: 5rem;
+.Percentage {
+  font-size: 5rem;
 }
 
 @media (max-width: 991px) {
-    .Header{
-        width: 100%;
-    }
+  .Header {
+    width: 100%;
+  }
 }

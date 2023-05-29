@@ -1,27 +1,26 @@
-.Label p{
-    color: var( --secondary-text);
-    margin-bottom: 1rem;
-    font-weight: var(--font-meduim);
-    font-size: 1.2rem;
+.Label p {
+  color: var(--secondary-text);
+  margin-bottom: 1rem;
+  font-weight: var(--font-meduim);
+  font-size: 1.2rem;
 }
 
-.Label span{
-    color: var( --muted-text);
+.Label span {
+  color: var(--muted-text);
 }
 
 /* tablets and small laptops */
 @media (min-width: 768px) and (max-width: 991px) {
-    .Label p{
-        margin-bottom: 0.7rem;
-        font-size: 1.1rem;
-    }
+  .Label p {
+    margin-bottom: 0.7rem;
+    font-size: 1.1rem;
+  }
 }
-
 
 /* mobile devices */
 @media (max-width: 767px) {
-    .Label p{
-        margin-bottom: 0.5rem;
-        font-size: 1rem;
-    }
+  .Label p {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
 }
